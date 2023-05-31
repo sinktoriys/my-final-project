@@ -5,13 +5,13 @@ import Purchases from 'Components/Purchaces/Purchases'
 import { Container } from '@mui/material'
 type Props = {}
 const Header = (props: Props) => {
-    const links = [
-        { text: 'Home', link: '/' },
-        { text: 'Breackfast', link: '/page2' },
-        { text: 'Lunch', link: '/page3' },
-        { text: 'Dinner', link: '/page4' },
-        { text: 'Contact', link: '/page5' },
-    ]
+    // const links = [
+    //     { text: 'Home', link: '/' },
+    //     { text: 'Breackfast', link: '/page2' },
+    //     { text: 'Lunch', link: '/page3' },
+    //     { text: 'Dinner', link: '/page4' },
+    //     { text: 'Contact', link: '/page5' },
+    // ]
     return (
         <header className="header">
             <Container>
