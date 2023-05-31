@@ -5,27 +5,27 @@ const Menu = (props: Props) => {
         <nav>
             <ul className="menu">
                 <li className="menu-children">
-                    <a href="">
+                    <a href="/">
                         Home
                         <img className="arrow" src={arrow} alt="Arrow" />
                     </a>
                     <ul>
                         <li className="children">
-                            <a href="#">Home-Alternate</a>
+                            <a href="/">Home-Alternate</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Breackfast</a>
+                    <a href="/">Breackfast</a>
                 </li>
                 <li>
-                    <a href="#">Lunch</a>
+                    <a href="/">Lunch</a>
                 </li>
                 <li>
-                    <a href="#">Dinner</a>
+                    <a href="/">Dinner</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="/">Contact</a>
                 </li>
             </ul>
         </nav>
