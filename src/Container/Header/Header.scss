@@ -1,178 +1,187 @@
-*{
+* {
     box-sizing: border-box;
 }
-@media(max-width:1200px){
-  /* mobile version */
-  .email,.number,.adress{ 
-  display: none;    
+@media (max-width: 1200px) {
+    /* mobile version */
+    .email,
+    .number,
+    .adress {
+        display: none;
+    }
 }
+@media (max-width: 1400px) {
+    /* laptop version */
+    body,
+    footer {
+        width: 1400px;
+    }
 }
-@media(max-width:1400px){
- /* laptop version */
- body,footer{     
- width:1400px;
- 
+body {
+    font-family: 'Roboto', sans-serif;
+    /* background-image: url("./images/patt.png"); */
 }
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-body{ 
-font-family: 'Roboto', sans-serif;
-/* background-image: url("./images/patt.png"); */
-}
-.container{
-max-width: 1200px;
-width: 100%;
-margin: 0 auto;
-padding-left: 15px;
-padding-right: 15px;
-}
-.row{
+.row {
     display: flex;
     margin: 0 -15px;
 }
-.col-1{
-  max-width: 8.33333333%; 
-  flex: 0 0 8.33333333%;
+.col-1 {
+    max-width: 8.33333333%;
+    flex: 0 0 8.33333333%;
 }
-.col-2{
-  max-width: 16.66667%; 
-  flex: 0 0 16.66667%;
+.col-2 {
+    max-width: 16.66667%;
+    flex: 0 0 16.66667%;
 }
-.col-3{
- max-width: 25%; 
- flex: 0 0 25%;
+.col-3 {
+    max-width: 25%;
+    flex: 0 0 25%;
 }
-.col-4{
- max-width: 33.33333%; 
- flex: 0 0 33.33333%;
-}
-
-.col-6{
-  max-width: 50%; 
-  flex: 0 0 50%;
-}
-.col-8{
-  display: flex;
-  max-width: 66%; 
-  flex: 0 0 66%;
-}
-.col-9{
-  max-width: 75%; 
-  flex: 0 0 75%;
-}
-.col-10{
-  max-width: 83.3333333%; 
-  flex: 0 0 83.3333333%;
-}
-.col-11{
-  max-width: 91.6666667%; 
-  flex: 0 0 91.6666667%;
+.col-4 {
+    max-width: 33.33333%;
+    flex: 0 0 33.33333%;
 }
 
- [class*="col-"]{
+.col-6 {
+    max-width: 50%;
+    flex: 0 0 50%;
+}
+.col-8 {
+    display: flex;
+    max-width: 66%;
+    flex: 0 0 66%;
+}
+.col-9 {
+    max-width: 75%;
+    flex: 0 0 75%;
+}
+.col-10 {
+    max-width: 83.3333333%;
+    flex: 0 0 83.3333333%;
+}
+.col-11 {
+    max-width: 91.6666667%;
+    flex: 0 0 91.6666667%;
+}
+
+[class*='col-'] {
     padding-left: 15px;
     padding-right: 15px;
- }
- .header{
+}
+.header {
     display: flex;
     height: 100px;
     align-items: center;
     background-color: green;
- }
- .menu{
+}
+.menu {
     display: flex;
     gap: 41px;
     list-style-type: none;
- } 
- .menu a {
-display: flex;
-height: 50px;
-text-decoration: none;
-color: black;
-text-align: center;
-line-height: 71px;
-font-size: 21px;
- }
- .menu a:hover{    
-    color: red;  
- }
+}
+.menu a {
+    display: flex;
+    height: 50px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    line-height: 71px;
+    font-size: 21px;
+}
+.menu a:hover {
+    color: red;
+}
 //  Sub menu---------------------------------------------------
-.menu-children ul{
-  display: none;
-  position: absolute;  
- }
- .menu-children li{
-  width: 170px;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;  
- }
+.menu-children ul {
+    display: none;
+    position: absolute;
+}
+.menu-children li {
+    width: 170px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 
- .menu-children:hover ul{
-  display: block;
-  margin: 0;
-  padding: 0;
- }
- .menu-children:hover li{
-  background-color: white;  
-  padding-left: 5px;
- }
- .children:hover a{
-  color:white;
-  
+.menu-children:hover ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.menu-children:hover li {
+    background-color: white;
+    padding-left: 5px;
+}
+.children:hover a {
+    color: white;
 }
 .menu-children li.children:hover {
-  background-color: red;
+    background-color: red;
 }
- /* bascket---------------------------------------------- */
+/* bascket---------------------------------------------- */
 
-.bascket{
-   display: flex;
-   position: absolute;
-   top: 25px;
-   right: 287px;   
-    padding: 9px;
-    width: 50px;
-    height: 50px;
-}
-
-.circle{
-   display: flex;
-   position: absolute;
-   right: 287px;
-   top: 21px;
-   border-radius: 50%;
-   background-color:red;   
-   width: 20px;
-   height: 20px;
-     }
-     .number{
-      color: white;
-      width:5px ;
-      height: 10px;
-      line-height: 0px;
-      margin-left: 5px;
-      position: absolute;
-      top: -5px;
-     }
-     .user{
+.bascket {
     display: flex;
     position: absolute;
     top: 25px;
-    right: 227px; 
+    right: 287px;
     padding: 9px;
     width: 50px;
     height: 50px;
-     }
-     .arrow{
-      width: 25px;
-      height: 25px;
-      top: 24px;
-      left: 1px;
-      position: relative;
-     }
+}
 
-
-
+.circle {
+    display: flex;
+    position: absolute;
+    right: 276px;
+    top: 19px;
+    border-radius: 50%;
+    background-color: red;
+    width: 24px;
+    height: 24px;
+}
+.circle-price {
+    display: flex;
+    position: absolute;
+    right: 276px;
+    top: 60px;
+    border-radius: 50%;
+    color: white;
+    background-color: red;
+    width: 24px;
+    height: 24px;
+}
+.number {
+    color: white;
+    width: 5px;
+    height: 10px;
+    line-height: 0px;
+    margin-left: 5px;
+    position: absolute;
+    top: -5px;
+}
+.user {
+    display: flex;
+    position: absolute;
+    top: 25px;
+    right: 227px;
+    padding: 9px;
+    width: 50px;
+    height: 50px;
+}
+.arrow {
+    width: 25px;
+    height: 25px;
+    top: 24px;
+    left: 1px;
+    position: relative;
+}
 
 // .arrow:hover{
 //   background-image: url(arrow-down-red.png);
@@ -180,7 +189,7 @@ font-size: 21px;
 /* Sub menu */
 
 //      .menu li ul  {
-//       position: absolute;      
+//       position: absolute;
 //       display: none;
 //       z-index: 1;
 //       top: 80px;
@@ -189,14 +198,14 @@ font-size: 21px;
 //      .menu li ul:hover  {
 //       background: red;
 //   }
-//   .menu li > ul li a {    
+//   .menu li > ul li a {
 //    padding: 25px;
 //    text-transform: none;
 //    background: white;
 //    color: black;
 //    text-align: left;
 // }
-// .header-drop-menu:hover{ 
+// .header-drop-menu:hover{
 // background-color: red;
 // }
 // .drop-menu:hover{
@@ -207,15 +216,7 @@ font-size: 21px;
 // color: white;
 // }
 
-
-
-
-
-
-
-
 /* Main */
-
 
 /* .main {
    display: block;   
@@ -486,7 +487,7 @@ padding-left: 40px;
   background-color: rgba(255, 255, 255, 0.75);
 } */
 
- /* //Модальне вікно  */
+/* //Модальне вікно  */
 /* .modal {
   position: fixed;
   top: 0;
