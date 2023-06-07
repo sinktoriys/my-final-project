@@ -7,7 +7,9 @@ const Main = (props: Props) => {
             sx={{
                 padding: '40px 0',
             }}
-        ></Container>
+        >
+            <Home />
+        </Container>
     )
 }
 export default Main
