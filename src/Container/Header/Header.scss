@@ -136,26 +136,19 @@ body {
     height: 50px;
 }
 
-.circle {
+.quantity {
     display: flex;
     position: absolute;
     right: 276px;
     top: 19px;
-    border-radius: 50%;
-    background-color: red;
-    width: 24px;
-    height: 24px;
+    left: 1374px;
 }
-.circle-price {
+.price {
     display: flex;
     position: absolute;
     right: 276px;
     top: 60px;
-    border-radius: 50%;
     color: white;
-    background-color: red;
-    width: 24px;
-    height: 24px;
 }
 .number {
     color: white;

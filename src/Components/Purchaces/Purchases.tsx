@@ -12,12 +12,12 @@ const Purchases = ({ cartData }: Props) => {
     return (
         <div className="purchases">
             <img className="bascket" src={basket} alt="Bascket" />
-            <div className="circle">
+            <div className="quantity">
                 <p className="number" id="products-count">
                     {cartData.totalCount}
                 </p>
             </div>
-            <div className="circle-price">${cartData.totalPrice}</div>
+            <div className="price">${cartData.totalPrice}</div>
             <img className="user" src={user} alt="User" />
         </div>
     )
