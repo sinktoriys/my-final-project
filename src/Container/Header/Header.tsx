@@ -4,12 +4,11 @@ import Menu from 'Components/Menu/Menu'
 import Purchases from 'Components/Purchaces/Purchases'
 import { Container } from '@mui/material'
 type Props = {
-    cartData: {
-        totalCount: number
-        totalPrice: number
+    productsInCart: {
+        [id: number]: number
     }
 }
-const Header = ({ cartData }: Props) => {
+const Header = ({ productsInCart }: Props) => {
     // const links = [
     //     { text: 'Home', link: '/' },
     //     { text: 'Breackfast', link: '/page2' },
@@ -29,7 +28,7 @@ const Header = ({ cartData }: Props) => {
                             <Menu />
                         </div>
                         <div className="col-2">
-                            <Purchases cartData={cartData} />
+                            <Purchases productsInCart={productsInCart} />
                         </div>
                     </div>
                 </div>
