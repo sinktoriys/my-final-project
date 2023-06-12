@@ -1,5 +1,13 @@
-type Props = {}
-const Home = (props: Props) => {
-    return <div>Home</div>
+import ProductList from 'Components/Products/ProductList'
+
+type Props = {
+    addProductToCart: (id: number, count: number) => void
+}
+const Home = ({ addProductToCart }: Props) => {
+    return (
+        <>
+            <ProductList addProductToCart={addProductToCart} />
+        </>
+    )
 }
 export default Home

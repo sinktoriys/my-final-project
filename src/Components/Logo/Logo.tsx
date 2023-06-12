@@ -3,7 +3,7 @@ type Props = {}
 const Logo = (props: Props) => {
     return (
         <div className="logo">
-            <a href="">
+            <a href="/">
                 <img src={logo} alt="Logo" width="280" height="93" />
             </a>
         </div>
