@@ -82,48 +82,48 @@ body {
 }
 .menu {
     display: flex;
-    gap: 41px;
+    gap: 23px;
     list-style-type: none;
 }
 .menu a {
     display: flex;
     height: 50px;
     text-decoration: none;
-    color: black;
+    // color: black;
     text-align: center;
-    line-height: 71px;
+    line-height: 62px;
     font-size: 21px;
 }
-.menu a:hover {
-    color: red;
-}
+// .menu a:hover {
+//     color: red;
+// }
 //  Sub menu---------------------------------------------------
-.menu-children ul {
-    display: none;
-    position: absolute;
-}
-.menu-children li {
-    width: 170px;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
+// .menu-children ul {
+//     display: none;
+//     position: absolute;
+// }
+// .menu-children li {
+//     width: 170px;
+//     margin: 0;
+//     padding: 0;
+//     list-style-type: none;
+// }
 
-.menu-children:hover ul {
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-.menu-children:hover li {
-    background-color: white;
-    padding-left: 5px;
-}
-.children:hover a {
-    color: white;
-}
-.menu-children li.children:hover {
-    background-color: red;
-}
+// .menu-children:hover ul {
+//     display: block;
+//     margin: 0;
+//     padding: 0;
+// }
+// .menu-children:hover li {
+//     background-color: white;
+//     padding-left: 5px;
+// }
+// .children:hover a {
+//     color: white;
+// }
+// .menu-children li.children:hover {
+//     background-color: red;
+// }
 /* bascket---------------------------------------------- */
 
 .bascket {
@@ -141,14 +141,14 @@ body {
     position: absolute;
     right: 276px;
     top: 0px;
-    left: 1389px;
+    left: 1400px;
     width: 110px;
 }
 
 .price {
     display: flex;
     position: absolute;
-    right: 248px;
+    right: 211px;
     top: 60px;
     color: white;
 }
@@ -170,13 +170,13 @@ body {
     width: 50px;
     height: 50px;
 }
-.arrow {
-    width: 25px;
-    height: 25px;
-    top: 24px;
-    left: 1px;
-    position: relative;
-}
+// .arrow {
+//     width: 25px;
+//     height: 25px;
+//     top: 24px;
+//     left: 1px;
+//     position: relative;
+// }
 
 // .arrow:hover{
 //   background-image: url(arrow-down-red.png);

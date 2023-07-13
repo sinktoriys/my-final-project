@@ -9,13 +9,6 @@ type Props = {
     }
 }
 const Header = ({ productsInCart }: Props) => {
-    // const links = [
-    //     { text: 'Home', link: '/' },
-    //     { text: 'Breackfast', link: '/page2' },
-    //     { text: 'Lunch', link: '/page3' },
-    //     { text: 'Dinner', link: '/page4' },
-    //     { text: 'Contact', link: '/page5' },
-    // ]
     return (
         <header className="header">
             <Container>
