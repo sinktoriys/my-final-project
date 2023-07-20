@@ -11,7 +11,8 @@ import LunchPage from 'Pages/Lunch/LunchPage'
 import DinnerPage from 'Pages/Dinner/DinnerPage'
 import ContactPage from 'Pages/Contact/ContactPage'
 import { createContext } from 'react'
-import { Omit, omit } from 'lodash'
+import { omit } from 'lodash'
+import ProductPage from 'Pages/Product/ProductPage'
 type ProductsInCart = {
     [id: number]: number
 }
@@ -22,10 +23,7 @@ type Context = {
 }
 export const AppContext = createContext<Context | null>(null)
 const App = () => {
-    const [productsInCart, setProductsInCart] = useState<ProductsInCart>({
-        1: 5,
-        2: 5,
-    })
+    const [productsInCart, setProductsInCart] = useState<ProductsInCart>({})
 
     const addProductToCart = (id: number, count: number) => {
         setProductsInCart((prevState) => ({
@@ -75,6 +73,7 @@ const App = () => {
                                 <CartPage productsInCart={productsInCart} />
                             }
                         />
+                        <Route path="/products/:id" element={<ProductPage />} />
                     </Routes>
                 </Container>
             </AppContext.Provider>

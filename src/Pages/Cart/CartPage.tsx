@@ -5,21 +5,21 @@ import { Grid } from '@mui/material'
 import CartTotal from 'Components/CartTotal/CartTotal'
 import CartProductList from 'Components/CartProductList/CartProductList'
 import CartProductListItemExtended from 'Components/CartProductList/CartProductListItemExtended'
+import { useAppSelector } from 'redux/hooks'
 type Props = {
-    productsInCart: {
+    productsInCart?: {
         [id: number]: number
     }
-    // removeProductFromCart: (id: number) => void
 }
 
-const CartPage = ({ productsInCart }: Props) => {
+const CartPage = (props: Props) => {
+    const productsInCart = useAppSelector((state) => state.productsInCart)
     return (
         <div>
             <Grid container spacing={4}>
                 <CartProductList
                     productsInCart={productsInCart}
                     CartItem={CartProductListItemExtended}
-                    // removeProductFromCart={removeProductFromCart}
                 />
             </Grid>
             <CartTotal productsInCart={productsInCart} />

@@ -2,13 +2,15 @@ import basket from 'assets/basket.png'
 import user from 'assets/user.png'
 import CartTotal from 'Components/CartTotal/CartTotal'
 import CartProductList from 'Components/CartProductList/CartProductList'
+import { useAppSelector } from 'redux/hooks'
 type Props = {
-    productsInCart: {
+    productsInCart?: {
         [id: number]: number
     }
 }
 
-const Purchases = ({ productsInCart }: Props) => {
+const Purchases = (props: Props) => {
+    const productsInCart = useAppSelector((state) => state.productsInCart)
     return (
         <div className="purchases">
             <img className="bascket" src={basket} alt="Bascket" />
