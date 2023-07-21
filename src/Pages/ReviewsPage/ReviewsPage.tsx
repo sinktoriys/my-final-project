@@ -13,7 +13,7 @@ type Review = {
     name: string
     text: string
 }
-const Reviews = (props: Props) => {
+const ReviewsPage = (props: Props) => {
     const arrReviews: Review[] = [
         {
             name: 'Марія',
@@ -105,4 +105,4 @@ const Reviews = (props: Props) => {
         </div>
     )
 }
-export default Reviews
+export default ReviewsPage

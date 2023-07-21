@@ -3,7 +3,7 @@ import productsArray from 'utils/productsArray'
 import ProductListItem from 'Components/Products/ProductListItem'
 
 type Props = {}
-const BreackfastPage = (props: Props) => {
+const DessertPage = (props: Props) => {
     return (
         <>
             <Typography
@@ -14,11 +14,11 @@ const BreackfastPage = (props: Props) => {
                     marginBottom: '30px',
                 }}
             >
-                Breakfasts
+                Desserts
             </Typography>
             <Grid container spacing={4}>
                 {productsArray
-                    .filter((item) => item.category === 'breakfast')
+                    .filter((item) => item.category === 'dessert')
                     .map(
                         ({
                             id,
@@ -44,4 +44,4 @@ const BreackfastPage = (props: Props) => {
         </>
     )
 }
-export default BreackfastPage
+export default DessertPage

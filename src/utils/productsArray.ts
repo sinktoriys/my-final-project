@@ -6,6 +6,7 @@ export type Product = {
     calories: string    
     price: number
     image:string
+    category:string
 }
 
 const productsArray: Product[] = [
@@ -17,6 +18,7 @@ const productsArray: Product[] = [
         calories: '247',
         price: 10,
         image:"/images/breakfast1.jpg",
+        category:'breakfast',
     },
     {
         id:2,
@@ -26,26 +28,27 @@ const productsArray: Product[] = [
         calories: '278',
         price: 12,
         image:"/images/breakfast2.jpg",
+        category:'breakfast',
     },
     {
         id:3,
         title: 'Lunch ',
         description: 'Creamy miso sprout fettucine', 
-        fullDescription:'Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit.',
-              
+        fullDescription:'Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit.',              
         calories: '352',
         price: 15,
         image:"/images/lunch.jpg",
+        category:'lunch',
     },
     {
         id:4,
         title: 'Dinner ',
         description: 'Spicy fries with vegetables salsa ',
-        fullDescription:'Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit.',
-              
+        fullDescription:'Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit.',              
         calories: '247',
         price: 15,
         image:"/images/dinner.jpg",
+        category:'dinner',
     },
     {
         id:5,
@@ -56,6 +59,7 @@ const productsArray: Product[] = [
         calories: '652',
         price: 16,
         image:"/images/dessert1.jpg",
+        category:'dessert',
     },
     {
         id:6,
@@ -65,6 +69,7 @@ const productsArray: Product[] = [
         calories: '247',
         price: 15,
         image:"/images/dessert2.jpg",
+        category:'dessert',
     },
       { 
          id:7,
@@ -74,6 +79,7 @@ const productsArray: Product[] = [
         calories: '174',
         price: 11,
         image:"/images/pizza.jpg",
+        category:'breakfast',
     },
       { 
          id:8,
@@ -83,6 +89,7 @@ const productsArray: Product[] = [
         calories: '327',
         price: 12,
         image:"/images/soup.jpg",
+        category:'lunch',
     },
       { 
          id:9,
@@ -92,6 +99,7 @@ const productsArray: Product[] = [
         calories: '327',
         price: 12,
         image:"/images/pizza2.jpg",
+        category:'dinner',
     },
 ]
 

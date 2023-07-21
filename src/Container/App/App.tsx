@@ -8,8 +8,11 @@ import CartPage from 'Pages/Cart/CartPage'
 import BreackfastPage from 'Pages/Breackfast/BreackfastPage'
 import LunchPage from 'Pages/Lunch/LunchPage'
 import DinnerPage from 'Pages/Dinner/DinnerPage'
-import ContactPage from 'Pages/Contact/ContactPage'
+import ContactPage from 'Pages/Dessert/DessertPage'
 import ProductPage from 'Pages/Product/ProductPage'
+import CheckoutPage from 'Pages/Checkout/CheckoutPage'
+import DessertPage from 'Pages/Dessert/DessertPage'
+import ReviewsPage from 'Pages/ReviewsPage/ReviewsPage'
 
 const App = () => {
     return (
@@ -26,9 +29,12 @@ const App = () => {
                     <Route path="/breackfast" element={<BreackfastPage />} />
                     <Route path="/lunch" element={<LunchPage />} />
                     <Route path="/dinner" element={<DinnerPage />} />
-                    <Route path="/contact" element={<ContactPage />} />
+                    <Route path="/dessert" element={<DessertPage />} />
+                    <Route path="/reviews" element={<ReviewsPage />} />
+
                     <Route path="/cart" element={<CartPage />} />
                     <Route path="/products/:id" element={<ProductPage />} />
+                    <Route path="/checkout" element={<CheckoutPage />} />
                 </Routes>
             </Container>
         </StyledEngineProvider>

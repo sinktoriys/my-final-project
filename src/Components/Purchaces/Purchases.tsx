@@ -21,7 +21,7 @@ const Purchases = (props: Props) => {
             <div className="price">
                 <CartTotal productsInCart={productsInCart} />
             </div>
-            <img className="user" src={user} alt="User" />
+            {/* <img className="user" src={user} alt="User" /> */}
         </div>
     )
 }
