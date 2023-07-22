@@ -4,8 +4,8 @@ import { omit} from "lodash";
 type State={[id:number]:number}
 
 const initialState:State={
-    1:2,
-    2:2
+    // 1:2,
+    // 2:2
 }
 
 export const cartSlice=createSlice({
