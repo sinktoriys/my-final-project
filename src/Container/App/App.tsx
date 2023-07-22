@@ -1,33 +1,42 @@
 import Header from 'Container/Header/Header'
 import CssBaseline from '@mui/material/CssBaseline'
-import Main from 'Container/Main/Main'
+import { Route, Routes } from 'react-router-dom'
 import { StyledEngineProvider } from '@mui/material/styles'
-import { useState } from 'react'
-
-type ProductsInCart = {
-    [id: number]: number
-}
+import { Container } from '@mui/material'
+import Home from 'Pages/Home/Home'
+import CartPage from 'Pages/Cart/CartPage'
+import BreackfastPage from 'Pages/Breackfast/BreackfastPage'
+import LunchPage from 'Pages/Lunch/LunchPage'
+import DinnerPage from 'Pages/Dinner/DinnerPage'
+import ContactPage from 'Pages/Dessert/DessertPage'
+import ProductPage from 'Pages/Product/ProductPage'
+import CheckoutPage from 'Pages/Checkout/CheckoutPage'
+import DessertPage from 'Pages/Dessert/DessertPage'
+import ReviewsPage from 'Pages/ReviewsPage/ReviewsPage'
 
 const App = () => {
-    const [productsInCart, setProductsInCart] = useState<ProductsInCart>({
-        1: 5,
-        2: 5,
-    })
-
-    const addProductToCart = (id: number, count: number) => {
-        setProductsInCart((prevState) => ({
-            ...prevState,
-            [id]: (prevState[id] || 0) + count,
-        }))
-    }
     return (
         <StyledEngineProvider injectFirst>
             <CssBaseline />
-            <Header productsInCart={productsInCart} />
-            <button onClick={() => addProductToCart(2, 5)}>
-                Add to Cart(id:2,count:5)
-            </button>
-            <Main addProductToCart={addProductToCart} />
+            <Header />
+            <Container
+                sx={{
+                    padding: '40px 0',
+                }}
+            >
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/breackfast" element={<BreackfastPage />} />
+                    <Route path="/lunch" element={<LunchPage />} />
+                    <Route path="/dinner" element={<DinnerPage />} />
+                    <Route path="/dessert" element={<DessertPage />} />
+                    <Route path="/reviews" element={<ReviewsPage />} />
+
+                    <Route path="/cart" element={<CartPage />} />
+                    <Route path="/products/:id" element={<ProductPage />} />
+                    <Route path="/checkout" element={<CheckoutPage />} />
+                </Routes>
+            </Container>
         </StyledEngineProvider>
     )
 }

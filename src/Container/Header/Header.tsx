@@ -3,19 +3,8 @@ import './Header.scss'
 import Menu from 'Components/Menu/Menu'
 import Purchases from 'Components/Purchaces/Purchases'
 import { Container } from '@mui/material'
-type Props = {
-    productsInCart: {
-        [id: number]: number
-    }
-}
-const Header = ({ productsInCart }: Props) => {
-    // const links = [
-    //     { text: 'Home', link: '/' },
-    //     { text: 'Breackfast', link: '/page2' },
-    //     { text: 'Lunch', link: '/page3' },
-    //     { text: 'Dinner', link: '/page4' },
-    //     { text: 'Contact', link: '/page5' },
-    // ]
+type Props = {}
+const Header = (props: Props) => {
     return (
         <header className="header">
             <Container>
@@ -28,7 +17,7 @@ const Header = ({ productsInCart }: Props) => {
                             <Menu />
                         </div>
                         <div className="col-2">
-                            <Purchases productsInCart={productsInCart} />
+                            <Purchases />
                         </div>
                     </div>
                 </div>
