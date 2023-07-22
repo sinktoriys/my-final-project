@@ -4,7 +4,6 @@ import productsArray, { Product, getProductsObject } from 'utils/productsArray'
 type Props = {
     productsObject?: {
         [id: number]: Product
-        // [fullDescription: string]: Product
     }
 }
 const ProductPage = ({
