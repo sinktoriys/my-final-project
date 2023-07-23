@@ -70,6 +70,7 @@ const ReviewsPage = (props: Props) => {
                     variant="outlined"
                     sx={{
                         margin: '30px 0',
+                        marginTop: '30px',
                     }}
                     key={i}
                 >

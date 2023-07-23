@@ -13,6 +13,7 @@ type Props = {
     id: number
     title: string
     description: string
+    fullDescription?: string
     calories: string
     price: number
     image: string
@@ -22,6 +23,7 @@ const ProductListItem = ({
     id,
     title,
     description,
+    fullDescription,
     calories,
     price,
     image,
@@ -49,6 +51,13 @@ const ProductListItem = ({
                     <Link to={`/products/${id}`}>{title}</Link>
                 </h4>
                 <div className="product-description">{description}</div>
+                <div
+                    className="product-fullDescription"
+                    dangerouslySetInnerHTML={{
+                        __html: fullDescription!,
+                    }}
+                ></div>
+                {/* {fullDescription}</div> */}
                 <div className="product-features">{calories}Cals</div>
                 <div className="product-price">Price: $ {price}</div>
                 <Quantity

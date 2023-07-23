@@ -1,5 +1,4 @@
 import basket from 'assets/basket.png'
-import user from 'assets/user.png'
 import CartTotal from 'Components/CartTotal/CartTotal'
 import CartProductList from 'Components/CartProductList/CartProductList'
 import { useAppSelector } from 'redux/hooks'
@@ -21,7 +20,6 @@ const Purchases = (props: Props) => {
             <div className="price">
                 <CartTotal productsInCart={productsInCart} />
             </div>
-            {/* <img className="user" src={user} alt="User" /> */}
         </div>
     )
 }
