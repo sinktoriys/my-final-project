@@ -12,6 +12,7 @@ const DinnerPage = (props: Props) => {
                 align="center"
                 sx={{
                     marginBottom: '30px',
+                    marginTop: '30px',
                 }}
             >
                 Dinners

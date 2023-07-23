@@ -7,10 +7,11 @@ const ProductList = (props: Props) => {
         <>
             <Typography
                 component="h2"
-                variant="h3"
+                variant="h1"
                 align="center"
                 sx={{
                     marginBottom: '30px',
+                    marginTop: '30px',
                 }}
             >
                 Menu
